@@ -1,0 +1,150 @@
+/* Style the entire form container */
+.custom-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields styling */
+.custom-form .form-control {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.2s;
+}
+
+/* Hover effect for input fields */
+.custom-form .form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Style for the form label */
+.custom-form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the form check */
+.custom-form .form-check-input {
+  margin-top: 0.5rem;
+}
+
+/* Button styling */
+.custom-btn {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Text style under input */
+.form-text {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* table css */
+/* Container for the table */
+.table-container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the table headers */
+.styled-table thead tr {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table rows */
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Styling each table cell */
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Hover effect on rows */
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action button styling */
+.action-btn {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.action-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .table-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .styled-table thead {
+    display: none;
+  }
+
+  .styled-table tbody,
+  .styled-table td,
+  .styled-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .styled-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .styled-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
